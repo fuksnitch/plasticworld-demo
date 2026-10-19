@@ -4,7 +4,7 @@ const CACHE = "pw-demo-v1";
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => e.waitUntil(self.clients.claim()));
 
-// Сеть, при офлайне — кэш (данные демо живут в localStorage/IndexedDB, не в кэше).
+// Сеть, при офлайне – кэш (данные демо живут в localStorage/IndexedDB, не в кэше).
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET" || new URL(event.request.url).origin !== self.location.origin) return;
   event.respondWith(
