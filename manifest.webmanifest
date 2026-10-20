@@ -1,6 +1,6 @@
 {
-  "name": "PlasticWorld CRM – демо",
-  "short_name": "PW CRM",
+  "name": "PlasticBooking – демо",
+  "short_name": "PB CRM",
   "start_url": "./#/app/leads",
   "scope": "./",
   "display": "standalone",
